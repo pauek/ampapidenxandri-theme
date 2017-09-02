@@ -36,7 +36,7 @@
 	<header id="masthead" class="site-header" role="banner">
 		<hgroup>
 			<h1 class="site-title">
-             <img src="/logo.png">
+             <img src="/wp-content/uploads/2017/07/logo-petit.jpg" style="width: 80px; padding-left: 25px">
              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
          </h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
