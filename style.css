@@ -548,7 +548,7 @@ a:hover {
 /* Header */
 .site-header {
 	padding: 24px 0;
-	padding: 1.714285714rem 0;
+	padding: 1rem 0;
 }
 .site-header h1,
 .site-header h2 {
@@ -1674,8 +1674,17 @@ img#wpstats {
 		margin-bottom: 0;
 		box-shadow: none;
 	}
+   div#main {
+      padding: 0 2.6rem;
+   }
+   #page > header > hgroup {
+      padding-left:  2.6rem;
+      padding-right: 2.6rem;
+   }   
+   footer[role="contentinfo"] {
+      padding: 1.714285714rem 2.6rem;
+   }
 }
-
 
 /* =Print
 ----------------------------------------------- */
@@ -1782,3 +1791,8 @@ img#wpstats {
 		margin-left: 3.57142857rem;
 	}
 }
+
+/* Pauek 
+
+*/
+
