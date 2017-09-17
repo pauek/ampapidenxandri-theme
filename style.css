@@ -550,9 +550,21 @@ a:hover {
 	padding: 24px 0;
 	padding: 1rem 0;
 }
+.site-header hgroup {
+   position: relative;
+}
+.site-header .twitter {
+   position: absolute;
+   top: 0;
+   right: -0.9em;
+}
+.site-header .twitter img {
+   width: 32px;
+   height: 32px;
+}
 .site-header h1,
 .site-header h2 {
-	text-align: center;
+	text-align: left;
 }
 .site-header h1 a,
 .site-header h2 a {
@@ -587,7 +599,7 @@ a:hover {
 .main-navigation {
 	margin-top: 24px;
 	margin-top: 1.714285714rem;
-	text-align: center;
+	text-align: left;
 }
 .main-navigation li {
 	margin-top: 24px;
@@ -1651,6 +1663,10 @@ img#wpstats {
 		margin-left: 48px;
 		margin-left: 3.428571429rem;
 	}
+   .site-header .twitter img {
+      width: 40px;
+      height: 40px;
+   }
 }
 
 /* Minimum width of 960 pixels. */
@@ -1674,6 +1690,7 @@ img#wpstats {
 		margin-bottom: 0;
 		box-shadow: none;
 	}
+   /* Pauek */
    div#main {
       padding: 0 2.6rem;
    }
@@ -1683,6 +1700,9 @@ img#wpstats {
    }   
    footer[role="contentinfo"] {
       padding: 1.714285714rem 2.6rem;
+   }
+   .site-header .twitter {
+      right: 1.1em;
    }
 }
 
@@ -1795,4 +1815,11 @@ img#wpstats {
 /* Pauek 
 
 */
+
+@media screen and (max-width: 340px) {
+   .wp-tiles-tile h4 {
+      font-size: 92%;
+   }
+}
+
 

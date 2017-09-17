@@ -34,12 +34,15 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
-		<hgroup>
+		<hgroup style="position: relative">
 			<h1 class="site-title">
              <!-- <img src="/wp-content/uploads/2017/07/logo-petit.jpg" style="width: 80px; padding-left: 25px"> -->
              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
          </h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+         <a class="twitter" href="https://twitter.com/ampapixandri">
+            <img src="/twitter.png">
+         </a>
 		</hgroup>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
