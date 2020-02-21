@@ -747,7 +747,6 @@ section[role="banner"] {
 
 /* Footer */
 footer[role="contentinfo"] {
-  border-top: 1px solid #ededed;
   clear: both;
   font-size: 12px;
   font-size: 0.857142857rem;
@@ -801,19 +800,19 @@ footer[role="contentinfo"] a:hover {
   font-size: 13px;
   font-size: 0.928571429rem;
   line-height: 1.846153846;
-  color: #757575;
+  color: #aaa;
 }
 .comments-link a,
 .entry-meta a {
-  color: #757575;
+  color: #aaa;
 }
 .comments-link a:hover,
 .entry-meta a:hover {
   color: #21759b;
 }
 article.sticky .featured-post {
-  border-top: 4px double #ededed;
-  border-bottom: 4px double #ededed;
+  border-top: 4px double #f7f7f7;
+  border-bottom: 4px double #f7f7f7;
   color: #757575;
   font-size: 13px;
   font-size: 0.928571429rem;
@@ -1049,7 +1048,7 @@ img.aligncenter,
 .site-content article {
   border-bottom: 4px double #ededed;
   margin-bottom: 72px;
-  margin-bottom: 5.142857143rem;
+  margin-bottom: 3.142857143rem;
   padding-bottom: 24px;
   padding-bottom: 1.714285714rem;
   word-wrap: break-word;
@@ -1062,12 +1061,11 @@ img.aligncenter,
   line-height: 1.714285714;
 }
 footer.entry-meta {
-  margin-top: 24px;
-  margin-top: 1.714285714rem;
-  font-size: 13px;
-  font-size: 0.928571429rem;
-  line-height: 1.846153846;
-  color: #757575;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #aaa;
+  font-style: italic;
 }
 .single-author .entry-meta .by-author {
   display: none;
@@ -1581,8 +1579,8 @@ img#wpstats {
   }
   .main-navigation ul.nav-menu,
   .main-navigation div.nav-menu > ul {
-    border-bottom: 1px solid #ededed;
-    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #f3f3f3;
+    border-top: 1px solid #f3f3f3;
     display: inline-block !important;
     text-align: left;
     width: 100%;
@@ -1603,14 +1601,14 @@ img#wpstats {
     line-height: 3.692307692;
     text-transform: uppercase;
     white-space: nowrap;
+    padding: 0 0.8rem;
   }
   .main-navigation li a:hover,
   .main-navigation li a:focus {
     color: #000;
   }
   .main-navigation li {
-    margin: 0 40px 0 0;
-    margin: 0 2.857142857rem 0 0;
+    margin: 0 1.4rem 0 0;
     position: relative;
   }
   .main-navigation li ul {
@@ -1749,7 +1747,7 @@ img#wpstats {
     padding-right: 2.6rem;
   }
   footer[role="contentinfo"] {
-    padding: 1.714285714rem 2.6rem;
+    padding: .8rem 1.2rem;
   }
   .site-header .twitter {
     right: 1.1em;
@@ -1886,15 +1884,24 @@ body {
   .site-header h1 {
     font-size: 1.6rem;
   }
+  .entry-content h4 {
+    font-size: .85rem;
+  }
 }
 @media screen and (max-width: 400px) {
   .site-header h1 {
     font-size: 1.45rem;
   }
+  .entry-content h4 {
+    font-size: .7rem;
+  }
 }
 @media screen and (max-width: 380px) {
   .site-header h1 {
     font-size: 1.35rem;
+  }
+  .entry-content h4 {
+    font-size: .6rem;
   }
 }
 .site-header h1 a.twitter {
@@ -1975,3 +1982,23 @@ footer .site-info {
   font-size: 1.2rem;
   text-decoration: none;
 }
+
+/* Menú en mòbils */
+@media screen and (max-width: 600px) {
+  .main-navigation ul.nav-menu.toggled-on a {
+    text-decoration: none;
+  }
+  .main-navigation ul.nav-menu.toggled-on li {
+    margin-top: 2rem;
+  }
+  .main-navigation ul.nav-menu.toggled-on li ul {
+    display: none;
+  }
+  .menu-toggle:active, .menu-toggle.toggled-on, button:active {
+    background-color: orange;
+  }
+  .entry-header .entry-title {
+    font-size: 2rem;
+  }
+}
+
