@@ -1873,10 +1873,10 @@ Estils AMPA
 
 */
 
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap");
 
 body {
-  font-family: 'IBM Plex Sans';
+  font-family: "IBM Plex Sans";
 }
 
 @media screen and (max-width: 340px) {
@@ -1885,7 +1885,22 @@ body {
   }
 }
 .site-header h1 {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+@media screen and (max-width: 440px) {
+  .site-header h1 {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .site-header h1 {
+    font-size: 1.45rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .site-header h1 {
+    font-size: 1.35rem;
+  }
 }
 .site-header h1 a.twitter {
   display: inline-flex;
