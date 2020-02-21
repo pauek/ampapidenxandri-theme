@@ -797,8 +797,7 @@ footer[role="contentinfo"] a:hover {
   font-weight: normal;
 }
 .entry-header .comments-link {
-  margin-top: 24px;
-  margin-top: 1.714285714rem;
+  margin-top: .7rem;
   font-size: 13px;
   font-size: 0.928571429rem;
   line-height: 1.846153846;
@@ -1667,8 +1666,7 @@ img#wpstats {
     display: none;
   }
   .entry-header .entry-title {
-    font-size: 22px;
-    font-size: 1.571428571rem;
+    font-size: 2.6rem;
   }
   #respond form input[type="text"] {
     width: 46.333333333%;
@@ -1942,4 +1940,25 @@ footer .site-info {
 }
 .main-navigation {
   margin-top: 0.4rem;
+}
+/* Byline -> títular taronga de cada tile */
+.wp-tiles-tile-with-image h4.wp-tiles-byline-title {
+  line-height: 1.2;
+}
+.wp-tiles-byline .wp-tiles-byline-wrapper {
+  padding: 0;
+}
+.wp-tiles-byline-align-bottom .wp-tiles-tile-with-image .wp-tiles-byline {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.entry-content p,
+.entry-summary p,
+.comment-content p,
+.mu_register p {
+  margin: 0 0 1.1rem;
+  line-height: 1.6;
 }
